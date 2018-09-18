@@ -36,10 +36,10 @@ pip install -r requirements.txt
 5. requirements.txt       -->     Python package dependencies
 
 ### Data Sources
-catalog.csv
+The main data source for this project is the Web Gallery of Arts, the **catalog.csv** file had the links to the images as well as their corresponding labels in terms of style, year, artist and materials used. The downloaded images are stored in separate folders based on their era label.
 
 ### Pretrained Models
-Model weights (last layers are removed)
+Includes model weights (last layers are removed). Training CNN models from scratch can be extremely time-consuming, saving model weights is an efficient way of speeding up experiments. The models we are using are:
 * Inception V3
 * Inception V4
 * Xception
@@ -47,6 +47,7 @@ Model weights (last layers are removed)
 * VGG19
 
 ### Scripts
+Includes all the python files needed to preprocess and classify images. Apart from the Convolutional Neural Networks, linear SVM and EFM-KNN models are used as baseline models for comparison purposes. 
 **Classifying Images**
 * classify-image.py
 
@@ -67,13 +68,12 @@ Model weights (last layers are removed)
 4. Feature Extraction
 
 
-
 ### Improvements and Ideas for Experiments
-**Data Augmentation Through Distortion:** 
+**Data Augmentation Through Distortion** <br>
 Augmenting the training dataset by applying distortions to the input images in order to increase the robustness of our models and their ability to generalise to a broad
 range of unknown pictures. We could use the following distortions: random, horizontal flips, rotations, axial translations and zooming.
 
-**Bagging:**
+**Bagging** <br>
 Bagging is the process of averaging the output of different predictions produced 
 by the model on several variations of input data. It can be used to increase the accuracy and stability of our classifier.
 
@@ -88,7 +88,7 @@ http://math.lakeforest.edu/banerji/research_files/WCVA16.pdf
 * Balakrishan, T., Rosston, S., Tang, E. "Using CNN to Classify and Understand Artists from the Rijksmuseum"
 
 ### Code Tutorials and Tools
-* [Using Keras Pre-trained Deep Learning models for your own dataset](https://gogul09.github.io/software/flower-recognition-deep-learning)
-* [Keras Classification Models](https://github.com/titu1994/Keras-Classification-Models)
-* [Artist Identification Using CNN](https://github.com/shashankvasisht/Artist-Identification-using-CNN)
+[Using Keras Pre-trained Deep Learning models for your own dataset](https://gogul09.github.io/software/flower-recognition-deep-learning) <br>
+[Keras Classification Models](https://github.com/titu1994/Keras-Classification-Models) <br>
+[Artist Identification Using CNN](https://github.com/shashankvasisht/Artist-Identification-using-CNN) <br>
 
